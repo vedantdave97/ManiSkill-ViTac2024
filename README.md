@@ -59,6 +59,11 @@ export PATH=/usr/local/cuda-12.3/bin:$PATH
 
 Then use the following commands to install [SapienIPC](https://github.com/Rabbit-Hu/sapienipc-exp), following the [README](https://github.com/Rabbit-Hu/sapienipc-exp/blob/main/README.md) file in that repo.
 
+Make a new soft link for libstd
+```
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.6.0.30 ~/anaconda3/envs/mani_vitac/lib/libstdc++.so.6
+```
+
 ## Training Example
 
 To train our example policy, run
